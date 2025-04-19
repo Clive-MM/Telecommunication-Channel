@@ -9,7 +9,7 @@ scaler = joblib.load("expresso_scaler.pkl")
 st.title("📱 Expresso Churn Prediction App")
 
 # 🎯 Input fields (in the exact order of model training)
-region = st.selectbox("Region (encoded)", options=range(0, 20))  # adjust range as needed
+region = st.selectbox("Region (encoded)", options=range(0, 20))  
 tenure = st.number_input("Tenure (months)", min_value=0)
 montant = st.number_input("Recharge Amount", min_value=0)
 frequence_rech = st.number_input("Recharge Frequency", min_value=0)
@@ -24,7 +24,7 @@ zone1 = st.number_input("Calls to Zone 1", min_value=0)
 zone2 = st.number_input("Calls to Zone 2", min_value=0)
 mrg = st.selectbox("Is Client Pre-Churn (MRG)?", [0, 1])
 regularity = st.number_input("Activity Regularity", min_value=0)
-top_pack = st.selectbox("Top Pack (encoded)", options=[0, 1, 2, 3, 4, 5])  # adjust as needed
+top_pack = st.selectbox("Top Pack (encoded)", options=[0, 1, 2, 3, 4, 5])  
 freq_top_pack = st.number_input("Top Pack Frequency", min_value=0)
 
 # 🧮 Form the input array (match training order)
