@@ -1,0 +1,14 @@
+# 🧠 Ignore large dataset
+Expresso_churn_dataset.csv
+
+# 🧠 Ignore virtual environment or any package folders
+telecom/
+*.dll
+
+# 🧠 Common ignores
+__pycache__/
+*.pkl
+*.joblib
+*.html
+*.ipynb_checkpoints
+.env
